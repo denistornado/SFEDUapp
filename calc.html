@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор ЕГЭ</title>
+    <script language="JavaScript" type="text/javascript" src="js/jq.js"></script>
+ 
+    <link rel="stylesheet" href="css/info.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+  
+    <title>Theme by CssTemplateHeaven</title>
+    
+    <!-- Included CSS Files (Compressed) -->
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  
+    <script src="javascripts/modernizr.foundation.js"></script>
+    
+    <link rel="stylesheet" href="fonts/ligature.css">
+    
+  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+
+
+  
+
+</head>
+
+<body >
+
+        <div id="regist">
+        <img id="regist__close"  align="right" src="img/close.png" height="50" width="50" alt="">
+        <img id="register__logo" src="img/logo_sfedu.png"  height="50px" width="60px" alt="">
+    <div class="register__block"> 
+       
+        <div class="register__shift">
+        <a class="register__link" href="education.html">Авторизация</a>
+     </div>        
+     <div class="register__shift">
+        <a class="register__link" href="register.html">Регистрация</a>
+     </div>    
+    
+    </div>  
+    </div>       
+</div>
+
+    <div id="container">
+        <header class="header">
+            <section class="top">
+                    <div class="logo"><img src="img/logo_sfedu.png" height="11
+                        0px" width="125px" alt=""></div>
+                    
+              <div class="autorization">
+                  <div id=contant class="autorization__info">Контактная информация</div>
+                  <div id=auto__wrap class="autorization__button">Авторизация</div>
+              </div>
+                        
+                  
+
+</section>
+               
+            <section class="bottom">
+                <div class="mobile-navigation">
+                    <input type="checkbox" name="" id="choice">
+                    <label class="choice-container" for="choice">
+                        <span class="button-choice_1"></span>
+                        <span class="button-choice_2"></span>
+                        <span class="button-choice_3"></span>
+                    </label>
+                 
+                    <ul class="hidden-menu">
+                        <div class="hidden-menu__title"> </div>
+
+                        
+                        <li class="menu__item"><a class="menu__link" href="#">
+                            Правила поступления</a></li>
+
+                    
+
+                    <li class="menu__item"><a class="menu__link" href="login.html">
+                            Обучение</a></li>
+
+                    
+
+                    <li class="menu__item"><a class="menu__link" href="#">
+                            Университет</a></li>
+
+                    
+
+                    <li class="menu__item"><a class="menu__link" href="#">
+                            Информация о обучении</a></li>
+
+                    
+
+                    <li class="menu__item"><a class="menu__link" href="#">
+                            Статистика прошлых лет</a></li>
+
+                    
+
+                    <li class="menu__item"><a class="menu__link" href="#">
+                            Калькулятор ЕГЭ</a></li>
+
+                      
+
+                    </ul>
+                </div>
+                            <div class="bottom__menu">
+                                   <a class="bottom__link" href="admission.html">
+                                        Поступление</a>
+                                        <a class="bottom__link" href="info.html">
+                                            Информация о обучении</a>
+                                            <a class="bottom__link" href="life.html">
+                                                Жизнь института</a>
+                                                <a class="bottom__link" href="result.html">
+                                                    Экзамены и списки</a>
+                                                    <a class="bottom__link" href="old.html">
+                                                        Статиcтика прошлых лет</a>
+                                                       <a class="bottom__link" href="calc.html">
+                                                            Калькулятор ЕГЭ</a>
+                                                           <a class="bottom__link" href="post.html">
+                                                                Задать вопрос</a>                                       
+                            </div>
+            </section>
+        </header>
+        <div class="present-location">
+            <ul class="present-location__list">
+                <li class="present-location__item"><a class="present-location__link_path" href="index.html">Главная страница</a></li>
+                <li class="present-location__item">/</li>
+                <li class="present-location__item"><a class="present-location__link_path" href="">Калькулятор ЕГЭ</a>
+            </ul>
+          
+        </div>
+        <p class="help">Калькулятор ЕГЭ</p>
+       
+            <fieldset>
+                   
+                <form action="javascript:void(0);" method="get">
+                    <div class="info__choice">
+                            
+                           
+                            <p>Математика</p>
+                            <p><input type="text" size=14 id=math class="num_only" value="50" onkeyup="this.value=this.value.replace(/[^0-9]+/g,''); isright(this);"></p>
+                            <p>Русский язык</p>
+                            <p><input type="text" size=14 id=ru class="num_only" value="50" onkeyup="this.value=this.value.replace(/[^0-9]+/g,''); isright(this);"></p>
+                            <select id="select" > 
+                                    <option disabled value="">Выберите экзамен</option>
+                                   
+                                   <option value="">Физика</option>
+                                   <option value="">Информатика</option>
+                                   <option value="">Обществознание</option>
+  
+                               </select>
+                               <div  class="login__text">Выберите специальный экзамен</div>
+                            <p id=text-spec>Специальный экзамен</p>
+                            <p><input type="text" size=14 id=spec class="num_only" value="50" onkeyup="this.value=this.value.replace(/[^0-9]+/g,''); isright(this);"></p>
+
+                   
+                    <div  class="login__text">Форма обучения</div>
+                    <select id=time> 
+                            <option disabled value="">Выберите форму</option>
+                            <option selected value="0">Очная</option>
+                            <option value="1">Очно-заочная</option>
+                            <option value="2">Заочная</option>
+                        </select>
+                        <div  class="login__text">Тип обучения</div>
+                        <select id=type> 
+                                <option disabled value="">Выберите тип</option>
+                                <option selected value="3">Любая</option>
+                                <option value="1">Бакалавр</option>
+                                <option value="2">Специалитет</option>
+                                
+                            </select>
+                    </div>
+                    <div class="info__check">
+                         
+                        <label>
+                                <input type="checkbox" class="option-input checkbox" checked />
+                                Военная специальность
+                              </label>
+                           </div>
+                </form>
+               
+                <button id="find">Поиск</button>
+                <button id="refresh"><span>Очистить</span><img style="vertical-align:middle" src="img/rotating-arrows-circle.png"alt=""></button>
+                <br>
+               
+            </fieldset>
+            <div id=full-time class=info>
+                <div id="o" class=info-time> <div>Очная</div></div>
+                <hr>
+                
+          
+            <div id="bachelor">
+                    <h2 align=center >Бакалавр</h2>
+                     <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2018/Annotation/02_03_03.pdf"> <strong>Направление подготови:</strong><br>Математическое обеспечение и администрирование информационных систем </a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>02.03.03</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>60</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>50</span></div>
+                                                <div><strong class=pred-3>Информатика</strong>:<span class=spec>50</span></div>
+                                             
+                                            </div>
+                                     
+                                 
+            </div>
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/09_03_01.pdf"> <strong>Направление подготови:</strong><br>Информатика и вычислительная
+                        техника</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>09.03.01</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>50</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>50</span></div>
+                                                <div><strong class=pred-3>Информатика</strong>:<span class=spec>50</span></div>
+                                          
+                                            </div>
+                                     
+            </div>
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/10_03_01.pdf"> <strong>Направление подготови:</strong><br>Информационная безопасность</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>10.03.01</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>60</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>50</span></div>
+                                                <div><strong class=pred-3>Информатика</strong>:<span class=spec>50</span></div>
+                                          
+                                            </div>
+                                     
+            </div>
+      
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/11_03_01_o.pdf"> <strong>Направление подготови:</strong><br>Радиотехника</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>11.03.01</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>50</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>55</span></div>
+                                                <div><strong class=pred-3>Физика</strong>:<span class=spec>50</span></div>
+                                          
+                                            </div>
+                             
+            </div>
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/13_03_02.pdf"> <strong>Направление подготови:</strong><br>Электроэнергетика и электротехника</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>13.03.02</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>50</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>55</span></div>
+                                                <div><strong class=pred-3>Физика</strong>:<span class=spec>50</span></div>
+                                          
+                                            </div>
+                                     
+            </div>
+      
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/38_03_04.pdf"> <strong>Направление подготови:</strong><br>Государственное и муниципальное управление</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>38.03.04</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>50</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>60</span></div>
+                                                <div><strong class=pred-3>Обществознание</strong>:<span class=spec>60</span></div>
+                                          
+                                            </div>
+                             
+            </div>
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/38_03_05.pdf"> <strong>Направление подготови:</strong><br>Бизнес-информатика</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>38.03.05</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>50</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>60</span></div>
+                                                <div><strong class=pred-3>Обществознание</strong>:<span class=spec>60</span></div>
+                                          
+                                            </div>
+                             
+            </div>
+           
+        
+        </div>
+        <div id=specialty>
+            <h2 align=center >Специалитет</h2>
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/10_05_03.pdf"> <strong>Направление подготови:</strong><br>Информационная безопасность автоматизированных систем</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>10.05.03</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>60</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>50</span></div>
+                                                <div><strong class=pred-3>Обществознание</strong>:<span class=spec>50</span></div>
+                                          
+                                            </div>
+                             
+            </div>
+
+
+</div>
+</div>
+<div id=part-time class=info>
+    <div id="o" class=info-time> <div>Очная-Заочная</div></div>
+    <hr>
+   
+
+
+        <h2 align=center >Направлений нет</h2>
+      
+      
+      
+</div>
+<div id=extramural class=info>
+        <div id="o" class=info-time> <div>Заочная</div></div>
+        <hr>
+        <div id=bachelor-1>
+            <h2 align=center >Балакавриат</h2>
+           
+            
+            <div class=info-main>
+                    <div class=info-main__title> <a href="http://sfedu.ru/00_main_2010/abitur/abit_2019/Annotation/25_03_01.pdf"> <strong>Направление подготови:</strong><br>Техническая эксплуатация летательных аппаратов и двигателей</a></div>
+                <div class=info-main__name>
+                    <strong>Код:</strong>25.03.01</div>
+                
+                                <div class=info-main__name>
+                                    <strong>Военная специальность:</strong><span class="war">Нет<span></div>
+                                        <div class=info-main__pred>
+                                                <div><strong class=pred-1>Математика</strong>:<span class=math>50</span></div>
+                                                <div><strong class=pred-2>Русский язык</strong>:<span class=ru>55</span></div>
+                                                <div><strong class=pred-3>Обществознание</strong>:<span class=spec>50</span></div>
+                                          
+                                            </div>
+                             
+            </div>
+                                  
+            </div>
+             
+           
+           
+                                   
+            </div>
+            <div id=specialty-1>
+                    <h2 align=center >Специалитет</h2>
+            </div>
+        </div>
+          
+          
+    </div>
+    </div>
+
+
+    <footer class="footer">
+                
+        </footer>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="js/reg.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+    <script>
+        $('#select').change(function(){
+  var data= $(this).val();
+  var value = $('#select option:selected').text();
+  document.getElementById("text-spec").textContent=value;
+});
+
+
+        function isright(obj)
+{
+if (obj.value>100) obj.value=100;  
+
+}
+
+        const start = document.getElementsByClassName('info-main').length;
+        
+  
+function types(){
+    var value1 = $('#type').val();
+           
+           
+           if(value1 === "1"){
+             
+               document.getElementById('bachelor').style.display='block';
+               document.getElementById('specialty').style.display='none';
+               document.getElementById('bachelor-1').style.display='block';
+               document.getElementById('specialty-1').style.display='none';
+           }
+           else if(value1 === "2"){
+               document.getElementById('bachelor').style.display='none';
+               document.getElementById('specialty').style.display='block';
+               document.getElementById('bachelor-1').style.display='none';
+               document.getElementById('specialty-1').style.display='block';
+           }
+           else if(value1 === "3"){
+               document.getElementById('bachelor').style.display='block';
+               document.getElementById('specialty').style.display='block';
+               document.getElementById('bachelor-1').style.display='block';
+               document.getElementById('specialty-1').style.display='block';
+           }
+           
+          
+}
+function times(){
+    var value2 = $('#time').val();
+           
+           
+           if(value2 === "0"){
+             
+               document.getElementById('full-time').style.display='block';
+               document.getElementById('part-time').style.display='none';
+               document.getElementById('extramural').style.display='none';
+           }
+           else if(value2 === "1"){
+            document.getElementById('full-time').style.display='none';
+               document.getElementById('part-time').style.display='block';
+               document.getElementById('extramural').style.display='none';
+           }
+           else if(value2 === "2"){
+            document.getElementById('full-time').style.display='none';
+               document.getElementById('part-time').style.display='none';
+               document.getElementById('extramural').style.display='block';
+           }
+           
+           
+          
+}
+
+        $('#find').click(function(){
+            var math = document.getElementById("math").value;
+            var ru = document.getElementById("ru").value;
+            var spec = document.getElementById("spec").value;
+            var value = $('#select option:selected').text();
+            var block=document.getElementsByClassName('info-main');
+            var mathinfo=document.getElementsByClassName('math');
+            var ruinfo=document.getElementsByClassName('ru');
+            var specinfo=document.getElementsByClassName('spec');
+            var ekz=document.getElementsByClassName('pred-3');
+            var i=0;     
+            while(i<block.length){
+                if(value===ekz[i].textContent){
+                   
+if(math >= mathinfo[i].textContent  && ru >= ruinfo[i].textContent && spec >= specinfo[i].textContent ){
+    block[i].style.display='table';
+}
+else{
+    block[i].style.display='none';
+}
+                }
+                else{
+                    block[i].style.display='none';
+                }
+                i++;
+            }
+            times();
+           types();
+          
+        });
+
+
+
+        $('#refresh').click(function(){
+            window.location.reload();
+        });
+        </script>
+    
+</body>
+
+</html>
