@@ -2,7 +2,7 @@
     "name": "SFEDU directory",
     "short_name": "SFEDU",
     "lang": "ru-RU",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "display": "minimal-ui",
     "theme_color": "#f7f8f1;",
  "icons": [
