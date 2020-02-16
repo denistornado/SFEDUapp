@@ -4,7 +4,7 @@
     "description": "Web Community Leaders landing page",
     "lang": "ru-RU",
     "start_url": "index.html",
-    "display": "minimal-ui",
+    "display": "standalone",
     "theme_color": "#f7f8f1",
     "background_color":"#f7f8f1",
     "icons": [
