@@ -1,5 +1,1 @@
-if('serviceWorker'in navigator){
-  navigator.serviceWorker.register('/sw.js')
-  .then(() => console.log('service worker registered'))
-  .catch(() => console.log('service worker not registered'))
-}
+navigator.serviceWorker.getRegistrations().then(function(registrations) { for(let registration of registrations) { registration.unregister() } })
