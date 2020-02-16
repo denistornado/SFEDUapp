@@ -4,7 +4,7 @@
     "lang": "ru-RU",
     "start_url": "index.html",
     "display": "minimal-ui",
-    "theme_color": "#f7f8f1;",
+    "theme_color": "#f7f8f1",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
