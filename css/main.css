@@ -11,6 +11,17 @@
   font-weight: normal;
   font-style: normal;
 }
+.logo{
+  margin-left:10px;
+}
+@media only screen and (min-width: 768px) {
+  .logo{
+    margin-left:15px;
+  }
+}
+#main__place{
+  margin-left:20px;
+}
 #info{
   display: none;
   white-space: pre-line;
