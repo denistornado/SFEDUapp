@@ -67,15 +67,14 @@ height: 200px;
 </div>  
 </div>    
 
-
 <header class="header">
     <section class="top">
-            <div class="logo"> <a href="index.html"> <img src="img/logo_sfedu.png" height="11
+            <div class="logo"> <a href="index.html"><img src="img/logo_sfedu.png" height="11
                 0px" width="125px" alt=""> </a></div>
             
       <div class="autorization">
           <div id=contant class="autorization__info">Контактная информация</div>
-          <div class="autorization__button">Авторизация</div>
+          <div id=auto__wrap class="autorization__button">Авторизация</div>
       </div>
                 
           
@@ -83,12 +82,53 @@ height: 200px;
 </section>
        
     <section class="bottom">
-        <div class="auto-mobile">
+        <div class="mobile-navigation">
+            <input type="checkbox" name="" id="choice">
+            <label class="choice-container" for="choice">
+                <span class="button-choice_1"></span>
+                <span class="button-choice_2"></span>
+                <span class="button-choice_3"></span>
+            </label>
+         
+            <ul class="hidden-menu">
+                <div class="hidden-menu__title"> </div>
+
+                
+                <li class="menu__item"><a class="menu__link" href="admission.html">
+                    Поступление</a></li>
+
             
-          <div id="auto-mobile__wrap">
-                 <div class="auto-mobile__text">Авторизация</div>
-    </div>
-    </div>
+
+            <li class="menu__item"><a class="menu__link" href="info.html">
+                    Информация о обучении</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="life.html">
+                    Жизнь института</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="result">
+                    Экзамен и списки</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="old">
+                    Статистика прошлых лет</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="calc">
+                    Калькулятор ЕГЭ</a></li>
+
+                    <li class="menu__item"><a class="menu__link" href="post">
+                        Задать вопрос</a></li>
+
+              
+
+            </ul>
+        </div>
                     <div class="bottom__menu">
                            <a class="bottom__link" href="admission.html">
                                 Поступление</a>
@@ -107,7 +147,6 @@ height: 200px;
                     </div>
     </section>
 </header>
-
         <div class="present-location">
             <ul class="present-location__list">
                 <li class="present-location__item"><a class="present-location__link_path" href="index.html">Главная страница</a></li>
