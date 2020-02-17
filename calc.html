@@ -195,18 +195,16 @@
                                 
                             </select>
                     </div>
-                    <div class="info__check">
-                         
-                        <label>
-                                <input type="checkbox" class="option-input checkbox" checked />
-                                Военная специальность
-                              </label>
-                           </div>
+                   
                 </form>
                
                 <button id="find">Поиск</button>
                 <button id="refresh"><span>Очистить</span><img style="vertical-align:middle" src="img/rotating-arrows-circle.png"alt=""></button>
                 <br>
+                <label>
+                    <input type="checkbox" class="option-input checkbox" checked />
+                    Военная специальность
+                  </label>
                
             </fieldset>
             <div id=full-time class=info>
@@ -515,6 +513,21 @@ else{
         });
         </script>
       <script src="app.js"></script>
+      <script>
+        info__close.onclick = function() {
+     document.getElementById('info').style.display="none";
+   };
+   
+   contant.onclick = function() {
+     document.getElementById('info').style.display="inline-block";
+   };
+   
+   contant.onclick = function() {
+   
+     document.getElementById('info').style.display="inline-block";
+   };
+   </script>
+   
 </body>
 
 </html>
