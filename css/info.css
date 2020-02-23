@@ -1,15 +1,4 @@
 
-@font-face {
-    font-family: 'LigatureSymbols';
-    src: url('LigatureSymbols-2.05.eot');
-    src: url('LigatureSymbols-2.05.eot?#iefix') format('embedded-opentype'),
-         url('LigatureSymbols-2.05.woff') format('woff'),
-         url('LigatureSymbols-2.05.ttf') format('truetype'),
-         url('LigatureSymbols-2.05.svg#LigatureSymbols') format('svg');
-    src: url('LigatureSymbols-2.05.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
 
 #extramural{
   display: none;
@@ -213,40 +202,7 @@ text-align: center;
   }
  
   
-  .option-input {
-    position: relative;
-    top: 13.33333px;
-    
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 30px !important;
-    width: 30px  !important;;
-    background: #88af9d;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block  !important;;
-    margin-right: 0.5rem;
-    outline: none;
-    position: relative;
-  
-  }
-  
-  .option-input:checked {
-    background: #058353;
-  }
-  .option-input:checked::before {
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    content: '✔';
-    display: inline-block;
-    font-size: 22.66667px;
-    text-align: center;
-    line-height: 30px;
-  }
-  
+ 
 
   
   
