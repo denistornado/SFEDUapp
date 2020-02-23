@@ -35,15 +35,7 @@
     color: white;
     text-align: center;
   }
-  #info{
-    width: 120px;
-    height: 30px;
-    border: rgba(21, 163, 52, 0.021) solid 1px;
-    border-radius: 40px;
-    background: rgba(197, 195, 186, 0.863);
-    color: rgb(0, 0, 0);
-    text-align: center;
-  }
+ 
   .help{
       font-size: 16px;
     margin-top: 20px;
@@ -53,8 +45,11 @@ margin-right: 5%;
     
   }
 
- 
-  }
+ .login__text{
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+  
   .info__choice{
    
       width: 100%;
@@ -119,13 +114,7 @@ text-align: center;
   #z{
     display: none;
   }
-  .info{
-    width:90%;
-    margin: auto;
-    border: #7c634c solid 1px;
-    background: #fdfdfd;
-    border-radius: 20px
-  }
+ 
   .info-time div{
     font-size: 20px;
     font-weight: 600;
@@ -204,13 +193,7 @@ text-align: center;
     padding: 10px 5px 10px 5px;
   }
   .info-main__lot div{
-  
-   
- 
     padding: 5px 2px 5px 2px;
-  
- 
-   
   }
   .info-main__title{
 
@@ -220,19 +203,11 @@ text-align: center;
     border: #ada094 solid 2px;
      background: #cccccc;
      padding: 10px 5px 10px 5px;
-
-   
   }
   .info-main__title a{
     color: black !important; /* Цвет ссылок */
   }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
-    overflow: hidden;
-  }
+
   body {
     overflow: auto; /* добавить полосу прокрутки */ 
   }
