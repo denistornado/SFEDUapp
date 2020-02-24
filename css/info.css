@@ -58,11 +58,7 @@ margin-right: 5%;
     border: #998980 solid 2px !important;
     
   }
- #info{
-   position: relative;
-   left: 15%;
-   translate: transform(-15%);
- }
+
   .info{
     margin: auto
   }
